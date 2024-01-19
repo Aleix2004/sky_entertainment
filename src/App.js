@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import Home from './Home';
 import Error from './Error';
 import Login from './Login';
+import Register from './Register';
+
 
 
 function App() {
@@ -22,7 +24,8 @@ function App() {
   return (
     <div>
       {!isAuthenticated && !loginAttemptFailed && (
-        <Login onLogin={handleLoginSuccess} onError={handleLoginFailure} />
+        // <Login onLogin={handleLoginSuccess} onError={handleLoginFailure} />
+        <Register/>
       )}
       {isAuthenticated && <Home />}
       {loginAttemptFailed && <Error />}

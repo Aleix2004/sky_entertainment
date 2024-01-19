@@ -49,12 +49,12 @@ function Login({ onLogin }) {
           <h2 className="login-text"
           
           >
-            Login
+            Register
           </h2>
         </div>
         {error && <p className="error">Usuario o contraseña incorrectos</p>}
         <div className="form-group">
-          <label htmlFor="username">Enter your username:</label>
+          <label htmlFor="username">Enter your email:</label>
           <input
             id="username"
             type="text"
@@ -72,7 +72,7 @@ function Login({ onLogin }) {
           />
         </div>
         <button type="submit" className="login-button">
-          Login
+          Registrer
         </button>
         <div className="ultimo-boton">
         <button type="button" onClick={handleRecovery} className="recovery-button">

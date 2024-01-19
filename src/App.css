@@ -1,24 +1,8 @@
 /* Estilos globales */
-body {
-  font-family: 'Helvetica Neue', Early GameBoy;
-  background-color: #404243;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color:red;
-}
+ 
 
 /* Estilos del contenedor principal */
-.container {
-  background-color: #fff;
-  padding: 40px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
+
 
 /* Estilos para el formulario */
 form {
@@ -34,6 +18,7 @@ input[type="password"] {
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 16px;
+  text-align: center;
 }
 
 /* Estilos para el botón de envío */
@@ -65,13 +50,15 @@ h1 {
 /* Espaciado entre los inputs y sus etiquetas */
 .form-group {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+
+  align-items: center;
+
 }
 
 /* Tamaño del input y label dentro del .form-group */
 .form-group > * {
-  width: 100%;
+  width: 50%;
+  
 }
 
 /* Ajustes para cuando la pantalla es muy pequeña */
@@ -99,4 +86,67 @@ button[type="button"] {
 button[type="button"]:hover {
   background-color: #5c6bc0;
   color: white;
+}
+
+
+.imagen{
+  width: 100%;
+}
+
+.fotoplace{
+  width: 65%;
+  
+}
+
+.container{
+  display: flex;
+  height: 100vh;
+}
+
+.login-container{
+  display: flex;
+  width: 90%;
+  background-color: #404243;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.barra_iz{
+  width: 5%;
+  background-image: url(/src/assets/wall.png);
+  background-repeat: repeat;
+}
+
+.barra_der{
+  width: 5%;
+  background-image: url(/src/assets/wall.png);
+  background-repeat: repeat;
+}
+
+.login{
+  width: 55%;
+  background-color: #C6CFA1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.login-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  background-color: #C6CFA1;
+}
+
+.login-text{
+  position: relative;
+  left: 135px;
+  top: -130px;
+}
+
+.ultimo-boton{
+  margin: 20px;
 }
